@@ -2,3 +2,5 @@
 decorator/\.idea/
 
 *.iml
+
+\.DS_Store
