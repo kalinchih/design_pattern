@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
         LicenseDao oldLicenseDao = new LicenseDao();
         LicenseDao newLicenseDao = ObjectUtils.clone(oldLicenseDao);
-        InAppSubscriptionUtil inAppSubscriptionUtil = new InAppSubscriptionUtil(newLicenseDao, "iap_verify_result");
-        inAppSubscriptionUtil.handleExpiry(6, 20).handleIsAutoRenew(true).handleSku(3);
-        newLicenseDao = inAppSubscriptionUtil.getLicenseDao();
+        LicenseDaoHandlerChain licenseDaoHandlerChain = new LicenseDaoHandlerChain(newLicenseDao, "iap_verify_result");
+        licenseDaoHandlerChain.handleExpiry(6, 20).handleIsAutoRenew(true).handleSku(3);
+        newLicenseDao = licenseDaoHandlerChain.getLicenseDao();
         System.out.println(toString(oldLicenseDao));
         System.out.println(toString(newLicenseDao));
     }
