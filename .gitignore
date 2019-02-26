@@ -1,8 +1,7 @@
 
-decorator/\.idea/
+*/\.idea/
 
 *.iml
 
 \.DS_Store
 
-method_chaining/\.idea/
