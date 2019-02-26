@@ -15,7 +15,12 @@ public class Main {
         licenseDaoHandlerChain.handleExpiry(6, 20).handleIsAutoRenew(true).handleSku(3);
         newLicenseDao = licenseDaoHandlerChain.getLicenseDao();
         System.out.println(toString(oldLicenseDao));
+        // {"licenseId":null,"isAutoRenew":false,"expiryDate":0,"provisionPeriod":0,"skuId":0,"iapVerifyResult":null,"entityEvent":null,
+        //        "behaviorEvents":null}
+
         System.out.println(toString(newLicenseDao));
+        // {"licenseId":null,"isAutoRenew":true,"expiryDate":20,"provisionPeriod":14,"skuId":3,"iapVerifyResult":null,"entityEvent":null,
+        //    "behaviorEvents":null}
     }
 
     private static String toString(Object object) {
