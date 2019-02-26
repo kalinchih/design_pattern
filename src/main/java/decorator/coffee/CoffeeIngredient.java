@@ -1,4 +1,4 @@
-package coffee;
+package decorator.coffee;
 
 abstract class CoffeeIngredient implements Coffee {
 

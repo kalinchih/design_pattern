@@ -1,4 +1,4 @@
-package inapp_sub;
+package method_chaining.inapp_subscription;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

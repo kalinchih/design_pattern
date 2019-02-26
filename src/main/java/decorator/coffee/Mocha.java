@@ -1,4 +1,4 @@
-package coffee;
+package decorator.coffee;
 
 public class Mocha extends CoffeeIngredient {
 

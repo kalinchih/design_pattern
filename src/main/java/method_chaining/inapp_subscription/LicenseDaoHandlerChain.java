@@ -1,4 +1,4 @@
-package inapp_sub;
+package method_chaining.inapp_subscription;
 
 import java.time.Instant;
 

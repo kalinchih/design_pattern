@@ -1,4 +1,4 @@
-package coffee;
+package decorator.coffee;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

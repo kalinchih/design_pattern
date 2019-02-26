@@ -1,4 +1,4 @@
-package coffee;
+package decorator.coffee;
 
 class Espresso implements Coffee {
 
