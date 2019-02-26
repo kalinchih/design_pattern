@@ -4,3 +4,5 @@ decorator/\.idea/
 *.iml
 
 \.DS_Store
+
+method_chaining/\.idea/
